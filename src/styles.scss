@@ -1,4 +1,161 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-color: #161215;
+}
+
+/* Flexbox
+// ================================================== */
+.d--f {
+  display: flex;
+}
+.d--if {
+  display: inline-flex;
+}
+
+/* Flex direction */
+.fd--r {
+  flex-direction: row;
+} /* Default */
+.fd--rr {
+  flex-direction: row-reverse;
+}
+.fd--c {
+  flex-direction: column;
+}
+.fd--cr {
+  flex-direction: column-reverse;
+}
+
+/* Flex wrap */
+.fw--n {
+  flex-wrap: nowrap;
+} /* Default */
+.fw--w {
+  flex-wrap: wrap;
+}
+.fw--wr {
+  flex-wrap: wrap-reverse;
+}
+
+/* Justify content */
+.jc--fe {
+  justify-content: flex-end;
+}
+.jc--fs {
+  justify-content: flex-start;
+} /* Default */
+.jc--c {
+  justify-content: center;
+}
+.jc--sa {
+  justify-content: space-around;
+}
+.jc--sb {
+  justify-content: space-between;
+}
+
+/* Align items */
+.ai--fs {
+  align-items: flex-start;
+}
+.ai--c {
+  align-items: center;
+}
+.ai--fe {
+  align-items: flex-end;
+}
+.ai--s {
+  align-items: stretch;
+} /* Default */
+.ai--b {
+  align-items: baseline;
+}
+
+/* Flex grow */
+.fg--0 {
+  flex-grow: 0;
+} /* Default */
+.fg--1 {
+  flex-grow: 1;
+}
+
+/* Flex shrink */
+.fs--0 {
+  flex-shrink: 0;
+}
+.fs--1 {
+  flex-shrink: 1;
+} /* Default */
+
+/* Flex basis */
+.fb--a {
+  flex-basis: auto;
+} /* Default */
+.fb--0 {
+  flex-basis: 0;
+}
+
+/* Align self */
+.as--a {
+  align-self: auto;
+} /* Default */
+.as--fs {
+  align-self: flex-start;
+}
+.as--c {
+  align-self: center;
+}
+.as--fe {
+  align-self: flex-end;
+}
+.as--s {
+  align-self: stretch;
+}
+.as--b {
+  align-self: baseline;
+}
+
+.rg-0 {
+  row-gap: 0;
+}
+.rg-1 {
+  row-gap: 0.25rem;
+}
+.rg-2 {
+  row-gap: 0.5rem;
+}
+.rg-3 {
+  row-gap: 1rem;
+}
+.rg-4 {
+  row-gap: 2rem;
+}
+.rg-5 {
+  row-gap: 3rem;
+}
+
+.cg-0 {
+  column-gap: 0;
+}
+.cg-1 {
+  column-gap: 0.25rem;
+}
+.cg-2 {
+  column-gap: 0.5rem;
+}
+.cg-3 {
+  column-gap: 1rem;
+}
+.cg-4 {
+  column-gap: 2rem;
+}
+.cg-5 {
+  column-gap: 3rem;
+}
