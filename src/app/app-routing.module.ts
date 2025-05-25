@@ -31,7 +31,7 @@ export const ROUTES: Routes = [
             title: $localize`Instructions`,
             component: LegoHomeComponent,
             data: {
-              sidenav: true,
+              sidenav: false,
               disabled: false,
             },
           },
