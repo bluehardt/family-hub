@@ -2,7 +2,7 @@
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
   "i18n": {
-    "sourceLocale": "en-US",
+    "sourceLocale": "en",
     "locales": {
       "pl": {
         "translation": "src/locale/messages.pl.xlf",
@@ -53,7 +53,7 @@
             "scripts": [
               "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
             ],
-            "localize": ["en-US", "pl"]
+            "localize": ["en", "pl"]
           },
           "configurations": {
             "production": {
@@ -70,7 +70,7 @@
                 }
               ],
               "outputHashing": "all",
-              "localize": ["en-US", "pl"]
+              "localize": ["en", "pl"]
             },
             "development": {
               "optimization": false,
