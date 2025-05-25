@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="2.0" xmlns="urn:oasis:names:tc:xliff:document:2.0" srcLang="en-US" trgLang="pl">
+  <file id="ngi18n">
+    <unit id="ngb.alert.close"><segment><source>Close</source><target>Zamknij</target></segment></unit>
+    <unit id="ngb.carousel.slide-number"><segment><source> Slide {$INTERPOLATION} of {$INTERPOLATION_1} </source><target> Slajd {$INTERPOLATION} z {$INTERPOLATION_1} </target></segment></unit>
+    <unit id="ngb.carousel.previous"><segment><source>Previous</source><target>Poprzedni</target></segment></unit>
+    <unit id="ngb.carousel.next"><segment><source>Next</source><target>Następny</target></segment></unit>
+    <unit id="ngb.datepicker.select-month"><segment><source>Select month</source><target>Wybierz miesiąc</target></segment></unit>
+    <unit id="ngb.datepicker.select-year"><segment><source>Select year</source><target>Wybierz rok</target></segment></unit>
+    <unit id="ngb.datepicker.previous-month"><segment><source>Previous month</source><target>Poprzedni miesiąc</target></segment></unit>
+    <unit id="ngb.datepicker.next-month"><segment><source>Next month</source><target>Następny miesiąc</target></segment></unit>
+    <unit id="ngb.pagination.first"><segment><source>««</source><target>««</target></segment></unit>
+    <unit id="ngb.pagination.previous"><segment><source>«</source><target>«</target></segment></unit>
+    <unit id="ngb.pagination.next"><segment><source>»</source><target>»</target></segment></unit>
+    <unit id="ngb.pagination.last"><segment><source>»»</source><target>»»</target></segment></unit>
+    <unit id="ngb.pagination.first-aria"><segment><source>First</source><target>Pierwsza</target></segment></unit>
+    <unit id="ngb.pagination.previous-aria"><segment><source>Previous</source><target>Poprzednia</target></segment></unit>
+    <unit id="ngb.pagination.next-aria"><segment><source>Next</source><target>Następna</target></segment></unit>
+    <unit id="ngb.pagination.last-aria"><segment><source>Last</source><target>Ostatnia</target></segment></unit>
+    <unit id="ngb.progressbar.value"><segment><source>{$INTERPOLATION}</source><target>{$INTERPOLATION}</target></segment></unit>
+    <unit id="ngb.timepicker.HH"><segment><source>HH</source><target>HH</target></segment></unit>
+    <unit id="ngb.timepicker.hours"><segment><source>Hours</source><target>Godziny</target></segment></unit>
+    <unit id="ngb.timepicker.MM"><segment><source>MM</source><target>MM</target></segment></unit>
+    <unit id="ngb.timepicker.minutes"><segment><source>Minutes</source><target>Minuty</target></segment></unit>
+    <unit id="ngb.timepicker.increment-hours"><segment><source>Increment hours</source><target>Dodaj godziny</target></segment></unit>
+    <unit id="ngb.timepicker.decrement-hours"><segment><source>Decrement hours</source><target>Odejmij godziny</target></segment></unit>
+    <unit id="ngb.timepicker.increment-minutes"><segment><source>Increment minutes</source><target>Dodaj minuty</target></segment></unit>
+    <unit id="ngb.timepicker.decrement-minutes"><segment><source>Decrement minutes</source><target>Odejmij minuty</target></segment></unit>
+    <unit id="ngb.timepicker.SS"><segment><source>SS</source><target>SS</target></segment></unit>
+    <unit id="ngb.timepicker.seconds"><segment><source>Seconds</source><target>Sekundy</target></segment></unit>
+    <unit id="ngb.timepicker.increment-seconds"><segment><source>Increment seconds</source><target>Dodaj sekundy</target></segment></unit>
+    <unit id="ngb.timepicker.decrement-seconds"><segment><source>Decrement seconds</source><target>Odejmij sekundy</target></segment></unit>
+    <unit id="ngb.timepicker.PM"><segment><source>{$INTERPOLATION}</source><target>{$INTERPOLATION}</target></segment></unit>
+    <unit id="ngb.toast.close-aria"><segment><source>Close</source><target>Zamknij</target></segment></unit>
+    <unit id="6259879865020994216"><segment><source>LEGO set number</source><target>Numer zestawu LEGO</target></segment></unit>
+    <unit id="7290374659252540217"><segment><source>Instructions</source><target>Instrukcje</target></segment></unit>
+    <unit id="2821179408673282599"><segment><source>Home</source><target>Strona domowa</target></segment></unit>
+    <unit id="1931522700645953778"><segment><source>LEGO</source><target>LEGO</target></segment></unit>
+    <unit id="6985267139889676910"><segment><source>Owned</source><target>Posiadane</target></segment></unit>
+    <unit id="7656395805241225659"><segment><source>Games</source><target>Gry</target></segment></unit>
+    <unit id="5254622645701859101"><segment><source>Points</source><target>Punkty</target></segment></unit>
+    <unit id="1748972213745441743"><segment><source>Profiles</source><target>Profile</target></segment></unit>
+    <unit id="4915431133669985304"><segment><source>Profile</source><target>Profil</target></segment></unit>
+  </file>
+</xliff>

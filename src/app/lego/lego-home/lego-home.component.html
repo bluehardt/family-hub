@@ -1,0 +1,28 @@
+<div class="lego-instructions-container d-flex flex-column">
+  <h2 i18n>Instructions</h2>
+
+  <div>
+    <input
+      #setNum
+      type="tel"
+      class="form-control-sm"
+      (keydown.enter)="getLego(setNum.value)"
+      placeholder="LEGO set number"
+      i18n-placeholder
+    />
+  </div>
+
+  <div
+    class="instructions-container d-flex flex-wrap cg-3 rg-3"
+    style="max-width: fit-content"
+  >
+    <a
+      *ngFor="let ins of instructions; index as i"
+      [href]="ins.file.url"
+      class="instruction-card"
+      target="_blank"
+    >
+      <img [src]="ins.image.url" alt="instruction image" />
+    </a>
+  </div>
+</div>

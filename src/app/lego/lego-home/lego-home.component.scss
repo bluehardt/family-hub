@@ -1,0 +1,11 @@
+.lego-instructions-container {
+  gap: 1rem;
+}
+
+.instructions-container {
+  gap: 1rem;
+
+  .instruction-card {
+    border: 1px solid gray;
+  }
+}

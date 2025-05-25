@@ -1,0 +1,21 @@
+.content {
+  margin-left: 60px;
+  transition: 0.3s;
+
+  &.sidebarExpanded {
+    margin-left: 150px;
+  }
+
+  height: 100vh;
+
+  .header,
+  .footer {
+    border: 1px solid red;
+    flex-grow: 0;
+  }
+
+  .cont {
+    flex-grow: 1;
+    overflow: auto;
+  }
+}
