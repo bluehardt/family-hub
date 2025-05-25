@@ -4,7 +4,7 @@ import { AppComponent } from './app.component';
 import { LegoHomeComponent } from './lego/lego-home/lego-home.component';
 
 export const ROUTES: Routes = [
-  // { path: '', pathMatch: 'full', redirectTo: '/pl' },
+  { path: '', pathMatch: 'full', redirectTo: '/pl' },
   {
     path: ':lang',
     title: 'lang',
