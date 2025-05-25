@@ -21,10 +21,11 @@
     class="link"
     [ngClass]="{ 'with-children': route.children?.length }"
   >
+    <!-- [routerLink]="[route.path]" -->
     <div
       class="content"
       [routerLink]="[
-        parentPath ? '/' + parentPath + '/' + route.path : '/' + route.path
+        'pl/' + (parentPath ? parentPath + '/' + route.path : route.path)
       ]"
       [routerLinkActive]="'active'"
     >

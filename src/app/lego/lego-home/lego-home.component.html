@@ -1,7 +1,7 @@
 <div class="lego-instructions-container d-flex flex-column">
   <h2 i18n>Instructions</h2>
 
-  <div>
+  <div class="d-flex align-items-center g-3">
     <input
       #setNum
       type="tel"
@@ -10,6 +10,7 @@
       placeholder="LEGO set number"
       i18n-placeholder
     />
+    <div *ngIf="loading$ | async" class="spinner-border" role="status"></div>
   </div>
 
   <div
