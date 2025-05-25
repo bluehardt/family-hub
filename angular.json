@@ -1,6 +1,15 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
+  "i18n": {
+    "sourceLocale": "en-US",
+    "locales": {
+      "pl": {
+        "translation": "src/locale/messages.pl.xlf",
+        "baseHref": "/pl/"
+      }
+    }
+  },
   "newProjectRoot": "projects",
   "projects": {
     "family-hub": {
@@ -27,9 +36,7 @@
             "outputPath": "dist/family-hub",
             "index": "src/index.html",
             "browser": "src/main.ts",
-            "polyfills": [
-              "zone.js"
-            ],
+            "polyfills": ["zone.js", "@angular/localize/init"],
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
@@ -39,10 +46,14 @@
               }
             ],
             "styles": [
-              "@angular/material/prebuilt-themes/magenta-violet.css",
+              "node_modules/bootstrap/scss/bootstrap.scss",
+              "node_modules/bootstrap-icons/font/bootstrap-icons.css",
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+            ],
+            "localize": ["en-US", "pl"]
           },
           "configurations": {
             "production": {
@@ -58,12 +69,19 @@
                   "maximumError": "8kB"
                 }
               ],
-              "outputHashing": "all"
+              "outputHashing": "all",
+              "localize": ["en-US", "pl"]
             },
             "development": {
               "optimization": false,
               "extractLicenses": false,
               "sourceMap": true
+            },
+            "pl": {
+              "optimization": false,
+              "extractLicenses": false,
+              "sourceMap": true,
+              "localize": ["pl"]
             }
           },
           "defaultConfiguration": "production"
@@ -76,6 +94,9 @@
             },
             "development": {
               "buildTarget": "family-hub:build:development"
+            },
+            "pl": {
+              "buildTarget": "family-hub:build:pl"
             }
           },
           "defaultConfiguration": "development"
@@ -88,7 +109,8 @@
           "options": {
             "polyfills": [
               "zone.js",
-              "zone.js/testing"
+              "zone.js/testing",
+              "@angular/localize/init"
             ],
             "tsConfig": "tsconfig.spec.json",
             "inlineStyleLanguage": "scss",

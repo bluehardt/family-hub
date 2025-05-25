@@ -1,0 +1,43 @@
+<div class="sidebar" [ngClass]="{ expanded: isExpanded }">
+  <div class="header">
+    <h1 class="title">Family Hub</h1>
+    <div class="toggle" (click)="handleSidebarToggle()">
+      <span class="chevron"></span>
+    </div>
+  </div>
+  <div class="content">
+    <ng-container
+      *ngFor="let route of ROUTES"
+      [ngTemplateOutlet]="sidenavItem"
+      [ngTemplateOutletContext]="{ $implicit: route }"
+    ></ng-container>
+  </div>
+  <div class="footer"></div>
+</div>
+
+<ng-template #sidenavItem let-route let-parentPath="parentPath">
+  <div
+    *ngIf="route.data?.sidenav"
+    class="link"
+    [ngClass]="{ 'with-children': route.children?.length }"
+  >
+    <div
+      class="content"
+      [routerLink]="[
+        parentPath ? '/' + parentPath + '/' + route.path : '/' + route.path
+      ]"
+      [routerLinkActive]="'active'"
+    >
+      <div class="title">
+        {{ route.title || route.path }}
+      </div>
+    </div>
+    <div *ngIf="route.children?.length" class="children">
+      <ng-container
+        *ngFor="let child of route.children"
+        [ngTemplateOutlet]="sidenavItem"
+        [ngTemplateOutletContext]="{ $implicit: child, parentPath: route.path }"
+      ></ng-container>
+    </div>
+  </div>
+</ng-template>
