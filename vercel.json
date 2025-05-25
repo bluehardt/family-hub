@@ -1,27 +1,3 @@
 {
-  "redirects": [
-    {
-      "source": "/",
-      "destination": "/pl",
-      "permanent": true
-    }
-  ],
-  "rewrites": [
-    {
-      "source": "/pl",
-      "destination": "/pl/index.html"
-    },
-    {
-      "source": "/pl/(.*)",
-      "destination": "/pl/$1"
-    },
-    {
-      "source": "/en",
-      "destination": "/en/index.html"
-    },
-    {
-      "source": "/en/(.*)",
-      "destination": "/en/$1"
-    }
-  ]
+  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
 }
